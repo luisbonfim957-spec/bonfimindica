@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONFIM INDICA | Melhores Achados</title>
+    <style>
+        :root {
+            --bg-color: #121214;
+            --card-bg: #1a1a1e;
+            --card-hover: #25252b;
+            --text-primary: #f1f1f3;
+            --text-secondary: #a8a8b3;
+            --accent-shopee: #ee4d2d;
+            --border-color: #2a2a31;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 12px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 440px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Perfil */
+        .profile-container {
+            margin-bottom: 12px;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-shopee);
+            box-shadow: 0 0 20px rgba(238, 77, 45, 0.3);
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .bio {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+
+        /* Títulos de Seção */
+        .section-header {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-secondary);
+            margin: 20px 0 10px 4px;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        /* Estilo Lista (Print 1 e 3) */
+        .list-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 10px;
+            background-color: var(--card-bg);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .list-btn:hover {
+            background-color: var(--card-hover);
+            border-color: var(--accent-shopee);
+            transform: translateY(-2px);
+        }
+
+        .list-left {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .icon-box {
+            width: 40px;
+            height: 40px;
+            background-color: #27272e;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-right: 12px;
+            border: 1px solid #33333d;
+        }
+
+        .list-text h2 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+
+        .list-text span {
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        .badge-status {
+            font-size: 11px;
+            color: var(--text-secondary);
+            background: #27272e;
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        /* Estilo Grid de Categorias (Print 2) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .grid-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .grid-card:hover {
+            background-color: var(--card-hover);
+            border-color: var(--accent-shopee);
+        }
+
+        .grid-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .grid-card span {
+            font-size: 11px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Rodapé */
+        footer {
+            margin-top: 30px;
+            font-size: 11px;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Perfil -->
+        <div class="profile-container">
+            <img src="https://via.placeholder.com/150" alt="Bonfim Indica" class="profile-img">
+        </div>
+        
+        <h1>Bonfim Indica</h1>
+        <p class="bio">As melhores utilidades e ofertas que testei e aprovei. Economize tempo e dinheiro! 🚀</p>
+
+        <!-- SEÇÃO 1: Produtos Selecionados & Ofertas (Inspirado no Print 1) -->
+        <div class="section-header">🔥 DESTAQUES E OPORTUNIDADES</div>
+
+        <a href="SEU_LINK_AQUI" class="list-btn" target="_blank">
+            <div class="list-left">
+                <div class="icon-box">🔍</div>
+                <div class="list-text">
+                    <h2>Produtos Selecionados</h2>
+                    <span>Itens testados e aprovados</span>
+                </div>
+            </div>
+            <span>➔</span>
+        </a>
+
+        <a href="SEU_LINK_AQUI" class="list-btn" target="_blank">
+            <div class="list-left">
+                <div class="icon-box">💡</div>
+                <div class="list-text">
+                    <h2>Achados Úteis e Interessantes</h2>
+                    <span>Facilite o seu dia a dia</span>
+                </div>
+            </div>
+            <span>➔</span>
+        </a>
+
+        <a href="SEU_LINK_AQUI" class="list-btn" target="_blank">
+            <div class="list-left">
+                <div class="icon-box">💰</div>
+                <div class="list-text">
+                    <h2>Ofertas e Oportunidades</h2>
+                    <span>Preços que valem a pena</span>
+                </div>
+            </div>
+            <span>➔</span>
+        </a>
+
+        <!-- SEÇÃO 2: Categorias (Inspirado no Print 2) -->
+        <div class="section-header">📁 CATEGORIAS</div>
+        
+        <div class="grid-container">
+            <a href="SEU_LINK_AQUI" class="grid-card">
+                <div class="grid-icon">📱</div>
+                <span>Eletrônicos</span>
+            </a>
+            <a href="SEU_LINK_AQUI" class="grid-card">
+                <div class="grid-icon">🏠</div>
+                <span>Casa</span>
+            </a>
+            <a href="SEU_LINK_AQUI" class="grid-card">
+                <div class="grid-icon">⚡</div>
+                <span>Esporte</span>
+            </a>
+            <a href="SEU_LINK_AQUI" class="grid-card">
+                <div class="grid-icon">🎮</div>
+                <span>Games</span>
+            </a>
+            <a href="SEU_LINK_AQUI" class="grid-card">
+                <div class="grid-icon">✨</div>
+                <span>Beleza</span>
+            </a>
+            <a href="SEU_LINK_AQUI" class="grid-card">
+                <div class="grid-icon">🏷️</div>
+                <span>Mais Ofertas</span>
+            </a>
+        </div>
+
+        <!-- SEÇÃO 3: Redes Sociais (Inspirado no Print 3) -->
+        <div class="section-header">🌐 REDES SOCIAIS</div>
+
+        <a href="#" class="list-btn" target="_blank">
+            <div class="list-left">
+                <div class="icon-box">📸</div>
+                <div class="list-text">
+                    <h2>Instagram</h2>
+                    <span>Bastidores e dicas</span>
+                </div>
+            </div>
+            <span class="badge-status">Em breve</span>
+        </a>
+
+        <a href="#" class="list-btn" target="_blank">
+            <div class="list-left">
+                <div class="icon-box">🎵</div>
+                <div class="list-text">
+                    <h2>TikTok</h2>
+                    <span>Vídeos curtos</span>
+                </div>
+            </div>
+            <span class="badge-status">Em breve</span>
+        </a>
+
+        <a href="#" class="list-btn" target="_blank">
+            <div class="list-left">
+                <div class="icon-box">👥</div>
+                <div class="list-text">
+                    <h2>Facebook</h2>
+                    <span>Comunidade e ofertas</span>
+                </div>
+            </div>
+            <span class="badge-status">Em breve</span>
+        </a>
+
+        <footer>
+            &copy; 2026 Bonfim Indica. Todos os direitos reservados.
+        </footer>
+    </div>
+
+</body>
+</html>
