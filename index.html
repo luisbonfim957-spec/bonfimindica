@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bonfim Indica | Achadinhos e Ofertas</title>
+
+<meta name="description" content="Achadinhos, ofertas e produtos selecionados pelo Bonfim Indica.">
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f5f5;
+    color:#222;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:25px 18px;
+    text-align:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.subtitle{
+    margin-top:8px;
+    color:#ccc;
+    font-size:15px;
+}
+
+nav{
+    background:white;
+    padding:12px;
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    z-index:10;
+    box-shadow:0 2px 8px #0001;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:bold;
+    font-size:13px;
+    padding:9px 13px;
+    border-radius:20px;
+    background:#eee;
+}
+
+.hero{
+    margin:20px auto;
+    max-width:1100px;
+    padding:35px 22px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#ff6b00,#ff9d00);
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.hero p{
+    font-size:16px;
+    line-height:1.5;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:10px 16px 40px;
+}
+
+.section-title{
+    font-size:23px;
+    margin:28px 0 15px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 3px 12px #0001;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+.product-image{
+    height:190px;
+    background:#eee;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#888;
+    font-size:14px;
+    text-align:center;
+    padding:15px;
+}
+
+.card-content{
+    padding:16px;
+}
+
+.card h3{
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#666;
+    font-size:14px;
+    line-height:1.4;
+    margin-bottom:14px;
+}
+
+.button{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:#ff6b00;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:9px;
+    font-weight:bold;
+}
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.category{
+    background:white;
+    padding:20px 10px;
+    text-align:center;
+    border-radius:13px;
+    box-shadow:0 2px 8px #0001;
+    font-weight:bold;
+}
+
+footer{
+    background:#111;
+    color:#bbb;
+    text-align:center;
+    padding:30px 15px;
+    margin-top:20px;
+}
+
+footer strong{
+    color:white;
+}
+
+@media(max-width:500px){
+    .logo{
+        font-size:25px;
+    }
+
+    .hero h1{
+        font-size:25px;
+    }
+
+    .products{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .product-image{
+        height:150px;
+    }
+
+    .card-content{
+        padding:12px;
+    }
+
+    .card h3{
+        font-size:15px;
+    }
+
+    .card p{
+        font-size:13px;
+    }
+
+    .categories{
+        grid-template-columns:1fr 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BONFIM INDICA</div>
+    <div class="subtitle">Achadinhos que realmente valem a pena</div>
+</header>
+
+<nav>
+    <a href="#ofertas">🔥 Ofertas</a>
+    <a href="#casa">🏠 Casa</a>
+    <a href="#eletronicos">💻 Eletrônicos</a>
+    <a href="#achadinhos">🛒 Achadinhos</a>
+</nav>
+
+<section class="hero">
+    <h1>Achadinhos selecionados para você</h1>
+    <p>
+        Produtos interessantes, ofertas e descobertas que podem facilitar
+        sua vida — tudo em um só lugar.
+    </p>
+</section>
+
+<main class="container">
+
+<h2 class="section-title">🗂️ Categorias</h2>
+
+<div class="categories">
+    <div class="category">🏠 Casa e Utilidades</div>
+    <div class="category">💻 Eletrônicos</div>
+    <div class="category">🔥 Ofertas</div>
+    <div class="category">🛒 Achadinhos</div>
+</div>
+
+<h2 class="section-title" id="ofertas">🔥 Produtos em destaque</h2>
+
+<div class="products">
+
+    <article class="card">
+        <div class="product-image">
+            IMAGEM DO PRODUTO
+        </div>
+
+        <div class="card-content">
+            <h3>Produto em destaque</h3>
+
+            <p>
+                Confira este achadinho e veja todos os detalhes da oferta.
+            </p>
+
+            <a class="button" href="#" target="_blank">
+                Ver oferta
+            </a>
+        </div>
+    </article>
+
+
+    <article class="card">
+        <div class="product-image">
+            IMAGEM DO PRODUTO
+        </div>
+
+        <div class="card-content">
+            <h3>Achadinho do dia</h3>
+
+            <p>
+                Uma seleção especial encontrada para você.
+            </p>
+
+            <a class="button" href="#" target="_blank">
+                Ver oferta
+            </a>
+        </div>
+    </article>
+
+
+    <article class="card">
+        <div class="product-image">
+            IMAGEM DO PRODUTO
+        </div>
+
+        <div class="card-content">
+            <h3>Oferta selecionada</h3>
+
+            <p>
+                Clique para conferir o produto e consultar a oferta.
+            </p>
+
+            <a class="button" href="#" target="_blank">
+                Ver oferta
+            </a>
+        </div>
+    </article>
+
+
+    <article class="card">
+        <div class="product-image">
+            IMAGEM DO PRODUTO
+        </div>
+
+        <div class="card-content">
+            <h3>Mais um achadinho</h3>
+
+            <p>
+                Produto selecionado pelo Bonfim Indica.
+            </p>
+
+            <a class="button" href="#" target="_blank">
+                Ver oferta
+            </a>
+        </div>
+    </article>
+
+</div>
+
+<h2 class="section-title" id="casa">🏠 Casa e Utilidades</h2>
+
+<div class="products">
+
+    <article class="card">
+        <div class="product-image">
+            PRODUTO PARA CASA
+        </div>
+
+        <div class="card-content">
+            <h3>Achadinhos para sua casa</h3>
+
+            <p>
+                Produtos úteis para facilitar o dia a dia.
+            </p>
+
+            <a class="button" href="#" target="_blank">
+                Ver oferta
+            </a>
+        </div>
+    </article>
+
+</div>
+
+<h2 class="section-title" id="eletronicos">💻 Eletrônicos</h2>
+
+<div class="products">
+
+    <article class="card">
+        <div class="product-image">
+            ELETRÔNICO
+        </div>
+
+        <div class="card-content">
+            <h3>Eletrônicos selecionados</h3>
+
+            <p>
+                Confira produtos e acessórios interessantes.
+            </p>
+
+            <a class="button" href="#" target="_blank">
+                Ver oferta
+            </a>
+        </div>
+    </article>
+
+</div>
+
+<h2 class="section-title" id="achadinhos">🛒 Achadinhos</h2>
+
+<div class="products">
+
+    <article class="card">
+        <div class="product-image">
+            SEU PRODUTO
+        </div>
+
+        <div class="card-content">
+            <h3>Achadinho selecionado</h3>
+
+            <p>
+                Veja o produto e confira os detalhes da oferta.
+            </p>
+
+            <a class="button" href="#" target="_blank">
+                Ver oferta
+            </a>
+        </div>
+    </article>
+
+</div>
+
+</main>
+
+<footer>
+    <strong>BONFIM INDICA</strong>
+    <p style="margin-top:8px;">
+        Achadinhos, ofertas e produtos selecionados.
+    </p>
+
+    <p style="margin-top:15px;font-size:12px;">
+        Alguns links podem ser links de afiliado.
+    </p>
+</footer>
+
+</body>
+</html>
